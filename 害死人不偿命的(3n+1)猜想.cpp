@@ -1,8 +1,8 @@
 ﻿#include<stdio.h>
 int  main() {
-	int n, i = 0;
+	int n, i = 0;                             //注意了，像这样的要统计计算次数的代码，i初始的时候都为0.
 	scanf("%d", &n);
-	printf("\n\n\n你输入的数字是%d\n ", n);
+	printf("%d\n ", n);
 	while (n != 1) {
 		if (n % 2 == 0) {
 			n = n / 2;
@@ -13,6 +13,6 @@ int  main() {
 			++i;
 		}									//如果n是奇数
 	}
-	printf("\n\n\n需要执行的次数是%d", i);
+	printf("%d", i);
 	return 0;
 }
