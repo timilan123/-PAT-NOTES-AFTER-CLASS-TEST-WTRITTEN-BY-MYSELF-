@@ -6,7 +6,7 @@ int main() {
 	if (pow(b, 2) - 4 * a * c < 0) {
 		printf("No real roots!\n");
 	}
-	else if (pow(b, 2) - 4 * a * c >= 0) {
+	else if (pow(b, 2) - 4 * a * c >= 0) {                                   //也可以用else
 		double r1 = (-b + sqrt((pow(b, 2)) - 4 * a * c)) / (2 * a);
 		double r2 = (-b - sqrt((pow(b, 2)) - 4 * a * c)) / (2 * a);
 		printf("r1=%7.2f\nr2=%7.2f\n", r1, r2);
