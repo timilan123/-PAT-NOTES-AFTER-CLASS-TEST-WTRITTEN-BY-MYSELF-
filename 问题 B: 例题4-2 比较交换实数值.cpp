@@ -1,4 +1,4 @@
-﻿#include<stdio.h>
+﻿#include<stdio.h>                      /*这题比较简单所以不虚*/
 int main() {
 	double a, b;
 	scanf("%lf%lf",&a,&b);
