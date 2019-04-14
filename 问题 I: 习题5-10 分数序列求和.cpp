@@ -5,7 +5,7 @@ int main() {
 			
 			num = a + b; 
 			all = all + (num / b);
-			a = b;
+			a = b;                     //记得在草稿纸上面写好
 			b = num;
 		}
 		printf("%.6f\n", all);
