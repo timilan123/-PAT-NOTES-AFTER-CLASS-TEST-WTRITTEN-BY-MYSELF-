@@ -1,3 +1,4 @@
+//冒泡排序的简化版
 #include<stdio.h>
 int  main(){
 int a,b,c,x;
