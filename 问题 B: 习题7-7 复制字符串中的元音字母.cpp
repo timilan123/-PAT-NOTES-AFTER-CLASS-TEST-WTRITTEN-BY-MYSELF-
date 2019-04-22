@@ -1,4 +1,4 @@
-//ÕâÌâºÜ¼òµ¥£¬¾ÍÊÇswitch caseºÍº¯ÊıÓëÊı×éµÄÊ¹ÓÃ
+//è¿™é¢˜å¾ˆç®€å•ï¼Œå°±æ˜¯switch caseå’Œå‡½æ•°ä¸æ•°ç»„çš„ä½¿ç”¨
 #include<stdio.h>
  void vowels(char s1[], char s2[]){
 	int k=0;
