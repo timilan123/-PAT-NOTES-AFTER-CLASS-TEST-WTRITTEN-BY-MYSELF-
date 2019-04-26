@@ -9,13 +9,13 @@ struct {
         int classs;
         char position[10];
     }category;
-}a[100]; //½á¹¹Ìå×î¶à´æ100¸öÈËµÄĞÅÏ¢ 
+}a[100]; //ç»“æ„ä½“æœ€å¤šå­˜100ä¸ªäººçš„ä¿¡æ¯ 
 
 int main(){
 	int n;         
-	scanf("%d",&n); //ÊäÈëÒª¼ÇÂ¼µÄÈËÊı 
+	scanf("%d",&n); //è¾“å…¥è¦è®°å½•çš„äººæ•° 
 	for(int i=0;i<n;i++){
-		scanf("%d %s %c %c",&a[i].num ,&a[i].name ,&a[i].sex,&a[i].job); //×¢ÒâÕâÀïµÄ%ºóÃæµÄÒªÒ»Ò»¶ÔÓ¦£¬×Ö·û¶Ô×Ö·û£¬×Ö·û´®¶Ô×Ö·û´® 
+		scanf("%d %s %c %c",&a[i].num ,&a[i].name ,&a[i].sex,&a[i].job); //æ³¨æ„è¿™é‡Œçš„%åé¢çš„è¦ä¸€ä¸€å¯¹åº”ï¼Œå­—ç¬¦å¯¹å­—ç¬¦ï¼Œå­—ç¬¦ä¸²å¯¹å­—ç¬¦ä¸² 
 		if(a[i].job =='t')
 		scanf("%s",&a[i].category.position );
 		else if(a[i].job =='s')
