@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-struct score{     //½á¹¹Ìå 
+struct score{     //ç»“æ„ä½“ 
 	int ID;
 	char name[10];
 	int Maths;
@@ -10,14 +10,14 @@ struct score{     //½á¹¹Ìå
 	int Chinese;
 }student[5];
 
-void input(struct score student[]){  //ÊäÈëÓÃµÄº¯Êı 
+void input(struct score student[]){  //è¾“å…¥ç”¨çš„å‡½æ•° 
 	for(int i=0;i<5;i++){
 //		scanf("%d %s %d %d %d",&student[i].ID ,student[i].name ,&student[i].Maths ,&student[i].English ,&student[i].Chinese );
 	cin>>student[i].ID>>student[i].name>>student[i].Maths>>student[i].English>>student[i].Chinese;	
 	}
 }
 
-print(struct score student[]){  //Êä³öÓÃµÄº¯Êı 
+print(struct score student[]){  //è¾“å‡ºç”¨çš„å‡½æ•° 
 		for(int i=0;i<5;i++){
 		cout<<student[i].ID<<' '<<student[i].name<<' '<<student[i].Maths<<' '<<student[i].English<<' '<<student[i].Chinese;	
 		printf("\n");
@@ -26,7 +26,7 @@ print(struct score student[]){  //Êä³öÓÃµÄº¯Êı
 
 }
 
-int main(){  //Ö÷º¯Êı 
+int main(){  //ä¸»å‡½æ•° 
 	input(student);
 	print(student);
 	return 0;
