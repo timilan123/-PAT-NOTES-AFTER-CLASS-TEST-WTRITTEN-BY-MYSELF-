@@ -4,7 +4,7 @@ int main(){
 	int N;
 	int num;
 	
-	while(scanf("%d",&N)!=EOF){
+	while(scanf("%d",&N)!=EOF){ //思想就是每轮进行比较，不用存储进入数组进行比较操作，这样更加省时间复杂度
 		int A1=0;
 		int fuhao=1,A2=0,panduan=0;
 		int A3=0;
