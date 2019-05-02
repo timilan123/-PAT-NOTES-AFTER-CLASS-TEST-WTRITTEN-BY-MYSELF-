@@ -23,7 +23,7 @@ int main(){
 			if(num%5==1){
 				A2=fuhao*num+A2;
 				fuhao= -fuhao;	
-				panduan++;
+				panduan++; //一定要记得A2有可能会因为相加等于0，所以要让不能用A2等于0来判断数字不存在
 			}
 			
 			
