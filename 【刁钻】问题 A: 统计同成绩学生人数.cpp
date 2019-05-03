@@ -3,14 +3,14 @@
 using namespace std;
 
 int main(){
-	int times=0;//²ÂÈ­´ÎÊı 
-	int jia_wins=0;//¼×Ó®µÄ×Ü´ÎÊı 
-	int yi_wins=0;//ÒÒÓ®µÄ×Ü´ÎÊı 
-	int draws=0;//Æ½µÄ´ÎÊı 
-	char jia,yi;//³öÈ­µÄÊÖÊÆ 
-	int jia_C=0,jia_B=0,jia_J=0;//¼×ÔÚ²»Í¬µÄÊÖÊÆÓ®µÄ´ÎÊı
-	int yi_C=0,yi_B=0,yi_J=0;//ÒÒÔÚ²»Í¬µÄÊÖÊÆÓ®µÄ´ÎÊı
-	char maxgesture_jia,maxgesture_yi;//ÓÃÀ´¼×ºÍÒÒÓ®µÄ×î¶àµÄÊÖÊÆ 
+	int times=0;//çŒœæ‹³æ¬¡æ•° 
+	int jia_wins=0;//ç”²èµ¢çš„æ€»æ¬¡æ•° 
+	int yi_wins=0;//ä¹™èµ¢çš„æ€»æ¬¡æ•° 
+	int draws=0;//å¹³çš„æ¬¡æ•° 
+	char jia,yi;//å‡ºæ‹³çš„æ‰‹åŠ¿ 
+	int jia_C=0,jia_B=0,jia_J=0;//ç”²åœ¨ä¸åŒçš„æ‰‹åŠ¿èµ¢çš„æ¬¡æ•°
+	int yi_C=0,yi_B=0,yi_J=0;//ä¹™åœ¨ä¸åŒçš„æ‰‹åŠ¿èµ¢çš„æ¬¡æ•°
+	char maxgesture_jia,maxgesture_yi;//ç”¨æ¥è®°å½•ç”²å’Œä¹™èµ¢çš„æœ€å¤šçš„æ‰‹åŠ¿ 
 	
 	scanf("%d",&times);
 	while(times--){
@@ -56,16 +56,16 @@ int main(){
 	printf("%d %d %d\n",jia_wins,draws,yi_wins);
 	printf("%d %d %d\n",yi_wins,draws,jia_wins);
 	
-	//½ÓÏÂÀ´½øĞĞ±È½Ï
+	//æ¥ä¸‹æ¥è¿›è¡Œæ¯”è¾ƒ
+	
 	if(jia_C>jia_B) {
-		
-		if(jia_C>=jia_J)      //×¢ÒâÕâÀïÓĞµÈºÅ£¬ÒòÎªCÔÚJµÄ×ÖÄ¸ĞòÇ°Ãæ£¬Èç¹ûÁ½¸öÊı×ÖÏàµÈÑ¡Ôñ°´×ÖÄ¸Ğò×îĞ¡µÄ½â£¬½ÓÏÂÀ´¼¸¸ö´úÂëÒ²ÊÇÍ¬Àí 
+		if(jia_C>=jia_J)      //æ³¨æ„è¿™é‡Œæœ‰ç­‰å·ï¼Œå› ä¸ºCåœ¨Jçš„å­—æ¯åºå‰é¢ï¼Œå¦‚æœä¸¤ä¸ªæ•°å­—ç›¸ç­‰é€‰æ‹©æŒ‰å­—æ¯åºæœ€å°çš„è§£ï¼Œæ¥ä¸‹æ¥å‡ ä¸ªä»£ç ä¹Ÿæ˜¯åŒç† 
 		maxgesture_jia='C';
 		else if(jia_C<jia_J)
 		maxgesture_jia='J';
 	}
+	
 	else if(jia_C<=jia_B){
-		
 		if(jia_B>=jia_J)
 		maxgesture_jia='B';
 		else if(jia_B<jia_J)
@@ -73,14 +73,13 @@ int main(){
 	}
 	
 	if(yi_C>yi_B) {
-		
 		if(yi_C>=yi_J)
 		maxgesture_yi='C';
 		else if(yi_C<yi_J)
 		maxgesture_yi='J';
 	}
+	
 	else if(yi_C<=yi_B){
-		
 		if(yi_B>=yi_J)
 		maxgesture_yi='B';
 		else if(yi_B<yi_J)
