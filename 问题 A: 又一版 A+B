@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+	long long A,B,D;
+
+
+	while(scanf("%lld",&D)!=EOF) {
+		if(D==0) break;
+		scanf("%lld%lld",&A,&B);
+		long long anew[100]= {0};
+		int num=-1;
+		long long newnum=A+B;
+
+		do {
+			anew[++num]=newnum%D;
+			newnum=newnum/D;
+		} while(newnum!=0);
+
+		newnum=0;//重置新数字
+		for(int i=num; i>=0; i--) {
+		printf("%lld",anew[i]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
