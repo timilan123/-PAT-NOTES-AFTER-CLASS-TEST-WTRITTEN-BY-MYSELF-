@@ -1,0 +1,19 @@
+1块钱一瓶水，2个瓶子换一瓶水,你能喝几瓶？
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	int money,bottle;
+	cout<<"输入你有几块钱：\n";
+	cin>>money;
+	bottle =money;
+
+	while(bottle>1) {
+		money += (bottle/2);
+		bottle = (bottle%2)+(bottle/2);
+	}
+	cout<<"你可以喝"<<money<<"瓶水"<<'\n';
+
+	return 0;
+}
